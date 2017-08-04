@@ -35,14 +35,18 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 
 # Information about countries
-gem 'countries'
+gem 'countries', :require => 'countries/global'
 
 # Selectise Js
 gem "selectize-rails"
 
+# bootstrap
+gem "twitter-bootstrap-rails"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry'
 end
 
 group :development do
