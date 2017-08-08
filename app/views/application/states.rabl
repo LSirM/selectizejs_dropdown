@@ -1,0 +1,2 @@
+object @states
+attributes :name

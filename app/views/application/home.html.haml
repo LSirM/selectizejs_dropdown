@@ -1,0 +1,9 @@
+%title Dropdown using Selectize.js
+%h1 Select your country
+
+= form_tag(root_path, method: :get) do
+  = select_tag 'country_filter', options_for_select(@countries), placeholder: 'Select your country'
+  = select_tag 'states_filter', options_for_select(''), placeholder: 'Select your state'
+
+:javascript
+  Dropdown.init();
