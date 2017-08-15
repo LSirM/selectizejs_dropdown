@@ -1,9 +1,15 @@
 %title Dropdown using Selectize.js
-%h1 Select your country
 
-= form_tag(root_path, method: :get) do
-  = select_tag 'country_filter', options_for_select(@countries), placeholder: 'Select your country'
-  = select_tag 'states_filter', options_for_select(''), placeholder: 'Select your state'
-
+.container
+  .row
+    .col.md-12
+      %h1 Select your country
+    .col.md-12
+      .col-md-3
+      .form_box
+      .col-md-6.col-md-offset-left-6
+        = form_tag(root_path, method: :get, class: 'form') do
+          = select_tag 'country_filter', options_for_select(@countries), placeholder: 'Select your country'
+          = select_tag 'states_filter', options_for_select(''), placeholder: 'Select your state'
 :javascript
   Dropdown.init();
