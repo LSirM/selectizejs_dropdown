@@ -1,0 +1,24 @@
+body{
+  background-color: #667e94;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  margin: 12% 31%;
+}
+
+.form{
+  margin: 52% auto;
+}
+
+.form_box{
+  background-color: #414f5c;
+  width: 46vw;
+  height: 28vh;
+  position: absolute;
+  top: 35%;
+  left: 27%;
+}
